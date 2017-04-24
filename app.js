@@ -8,6 +8,11 @@ var guardians = [];
 var goatForm = document.getElementById('goat-form');
 goatForm.addEventListener('submit', handleGoatFormSubmit);
 
+//grab guardian form from html and assign its reference to guardianForm
+//add submit event listener
+var guardianForm = document.getElementById('goat-guardian-form');
+guardianForm.addEventListener('submit', handleGuardianFormSubmit);
+
 // constructor for Goat in need
 function Goat(goatName, goatAge, goatLocation, serviceNeeded, contact, src) {
   this.goatName = goatName;
@@ -18,12 +23,11 @@ function Goat(goatName, goatAge, goatLocation, serviceNeeded, contact, src) {
   this.goatImage = src;
 }
 
-
 // contructor for Goat Guardian
-function Guardian(author, authorLocation, authorContact, serviceOffered){
-  this.author = author;
-  this.authorLocation = authorLocation;
-  this.authorContact = authorContact;
+function Guardian(guardianName, guardianLocation, guardianContact, serviceOffered){
+  this.guardianName = guardianName;
+  this.guardianLocation = guardianLocation;
+  this.guardianContact = guardianContact;
   this.serviceOffered = serviceOffered;
 }
 
@@ -41,16 +45,60 @@ function handleGoatFormSubmit(event) {
 // storing the value of the input in an empty array of the constructor
   var addGoat = new Goat(nameOfGoat, ageOfGoat, locationOfGoat, contactOfGoat, serviceNeeded);
   goats.push(addGoat);
-
   goatForm.reset();
 }
 
+function handleGuardianFormSubmit(event) {
+  event.preventDefault();
+  var guardianForm = event.target;
 
-// var goatInNeed = document.getElementById('goat-in-need');
-// var goatGuardian = document.getElementById('goat-guardian');
+  //grab input data and assign to variables
+  var nameOfGuardian = guardianForm.nameOfGuardian.value;
+  var locationOfGuardian = guardianForm.locationOfGuardian.value;
+  var contactOfGuardian = guardianForm.contactOfGuardian.value;
+  var serviceOffered = guardianForm.serviceOffered.value;
 
-// goatInNeed.addEventListener('click', functionName);
-// goatGuardian.addEventListener('click', secondFunctionName);
+  // instantiate new Guardian using form values with Guardian constructor and push to guardians array
+  var addGuardian = new Guardian(nameOfGuardian, locationOfGuardian, contactOfGuardian, serviceOffered);
+  guardians.push(addGuardian);
+  guardianForm.reset();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var goatInNeedButton = document.getElementById('goat-in-need');
+var goatGuardianButton = document.getElementById('goat-guardian');
+
+goatInNeedButton.addEventListener('click', showForm);
+goatGuardianButton.addEventListener('click', showForm);
+
+function showForm(event) {
+  if (goatGuardianButton === event.target) {
+    guardianForm.style.display = 'block';
+    goatGuardianButton.style.display = 'none';
+    goatInNeedButton.style.display = 'none';
+  } else if (goatInNeedButton === event.target) {
+    goatForm.style.display = 'block';
+    goatInNeedButton.style.display = 'none';
+    goatGuardianButton.style.display = 'none';
+  }
+}
+
 
 // function selectForm(event) {
 //   if(goatInNeed.checked) {
