@@ -43,13 +43,13 @@ function handleGoatFormSubmit(event) {
   var locationOfGoat = goatForm.locationOfGoat.value;
   var contactOfGoat = goatForm.contactOfGoat.value;
   var serviceNeeded = goatForm.serviceNeeded.value;
-
+  var goatImage = goatForm.goatImage.value;
   // storing the value of the input in an empty array of the constructor
-  var addGoat = new Goat(nameOfGoat, ageOfGoat, locationOfGoat, contactOfGoat, serviceNeeded);
+  var addGoat = new Goat(nameOfGoat, ageOfGoat, locationOfGoat, contactOfGoat, serviceNeeded, goatImage);
   goats.push(addGoat);
 
   try {
-    localStorage.goats = JSON.stringify(goats)
+    localStorage.goats = JSON.stringify(goats);
   } catch (error){
     console.log('something went wrong!', error);
   }
