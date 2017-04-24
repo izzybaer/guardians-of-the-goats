@@ -5,10 +5,10 @@
 </head>
 <body>
   <div id="select-form">
-    <button name='Goat Guardian'id='goatGuardian'>Goat Guardian</button>
-    <button name='Goat in need' id='goatInNeed'>Goat in need</button>
+    <button id='goat-guardian'>Goat Guardian</button>
+    <button id='goat-in-need'>Goat in need</button>
   <div id='goat-div'>
-    <form id='goat-form'>
+    <form id='goat-form' style='display: none'>
       <input name='nameOfGoat' type='text' placeholder='Goat Name' />
       <input name='ageOfGoat' type='number' placeholder='Goat Age' />
       <input name='locationOfGoat' type='text' placeholder='Goat Location' />
@@ -18,10 +18,10 @@
     </form>
   </div>
   <div id='guardian-div'>
-    <form id='goat-guardian-form'>
-      <input name='nameofAuthor' type='text' placeholder='Name' />
-      <input name='locationOfAuthor' type='text' placeholder='City and State' />
-      <input name='contactOfAuthor' type='text' placeholder='Email Address' />
+    <form id='goat-guardian-form' style='display: none'>
+      <input name='nameOfGuardian' type='text' placeholder='Name' />
+      <input name='locationOfGuardian' type='text' placeholder='City and State' />
+      <input name='contactOfGuardian' type='text' placeholder='Email Address' />
       <input name='serviceOffered' type='text' placeholder='How can you help a goat?' />
       <button type='submit'> Submit </button>
     </form>
