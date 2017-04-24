@@ -4,30 +4,6 @@
 var goats = [];
 var guardians = [];
 
-var goatImages= [
-  new goatImagesFunc('goat_1', 'Goat_1.jpg'),
-  new goatImagesFunc('goat_2', 'Goat_2.jpg'),
-  new goatImagesFunc('goat_3', 'Goat_3.jpg'),
-  new goatImagesFunc('goat_4', 'Goat_4.jpg'),
-  new goatImagesFunc('goat_5', 'Goat_5.jpg'),
-  new goatImagesFunc('goat_6', 'Goat_6.jpg'),
-  new goatImagesFunc('goat_7', 'Goat_7.jpg'),
-  new goatImagesFunc('goat_8', 'Goat_8.jpg'),
-  new goatImagesFunc('goat_9', 'Goat_9.jpg')
-];
-
-
-imageElement = document.createElement('img');
-  imageLI = document.createElement('li');
-  imageElement.src = goatImages.src;
-  imageLI.appendChild(imageElement);
-  imageUL.appendChild(imageLI);
-
-
-function goatImagesFunc(name, filename) {
-  this.name = name;
-  this.filename = 'img/goat_images/' + filename;
-
 // grab goat form from html and assigning it to var goatForm
 // add event listener
 var goatForm = document.getElementById('goat-form');
@@ -54,21 +30,27 @@ function Guardian(guardianName, guardianLocation, guardianContact, serviceOffere
   this.guardianLocation = guardianLocation;
   this.guardianContact = guardianContact;
   this.serviceOffered = serviceOffered;
-
 }
 
-var imageUL = document.createElement('ul');
-mouseover_images.appendChild(imageUL);
 
-var imageElement;
-for(var i=0; i<goatImages.length; i++) {
+function handleGoatFormSubmit(event) {
+  event.preventDefault();
+  var goatForm = event.target;
 
-// storing the value of the input in an empty array of the constructor
+  // grab input data and assign to variables
+  var nameOfGoat = goatForm.nameOfGoat.value;
+  var ageOfGoat = goatForm.ageOfGoat.value;
+  var locationOfGoat = goatForm.locationOfGoat.value;
+  var contactOfGoat = goatForm.contactOfGoat.value;
+  var serviceNeeded = goatForm.serviceNeeded.value;
+
+  // storing the value of the input in an empty array of the constructor
   var addGoat = new Goat(nameOfGoat, ageOfGoat, locationOfGoat, contactOfGoat, serviceNeeded);
   goats.push(addGoat);
   goatForm.reset();
 }
 
+// handleGuardianFormSubmit invokes on form submit event
 function handleGuardianFormSubmit(event) {
   event.preventDefault();
   var guardianForm = event.target;
@@ -84,22 +66,6 @@ function handleGuardianFormSubmit(event) {
   guardians.push(addGuardian);
   guardianForm.reset();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 var goatInNeedButton = document.getElementById('goat-in-need');
@@ -121,13 +87,3 @@ function showForm(event) {
     //ungray the other button
   }
 }
-
-
-// function selectForm(event) {
-//   if(goatInNeed.checked) {
-//     console.log('show goat in need form', event);
-//   } else if(goatGuardian.checked) {
-//     console.log('show goat guardian form', event);
-//   } else {
-//     console.log('something went wrong');
-//   }
