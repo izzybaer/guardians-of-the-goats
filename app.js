@@ -90,12 +90,14 @@ goatGuardianButton.addEventListener('click', showForm);
 function showForm(event) {
   if (goatGuardianButton === event.target) {
     guardianForm.style.display = 'block';
-    goatGuardianButton.style.display = 'none';
-    goatInNeedButton.style.display = 'none';
+    goatForm.style.display = 'none';
+    //gray out this button through css
+    //ungray the other button
   } else if (goatInNeedButton === event.target) {
     goatForm.style.display = 'block';
-    goatInNeedButton.style.display = 'none';
-    goatGuardianButton.style.display = 'none';
+    guardianForm.style.display = 'none';
+    //gray out this button through css
+    //ungray the other button
   }
 }
 
