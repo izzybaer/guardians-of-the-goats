@@ -39,18 +39,18 @@ function handleGoatFormSubmit(event) {
   var serviceNeeded = goatForm.serviceNeeded.value;
 
 // storing the value of the input in an empty array of the constructor
-  var addGoat = new Goat(goatName, goatAge, goatLocation, serviceNeeded, contact, src);
+  var addGoat = new Goat(nameOfGoat, ageOfGoat, locationOfGoat, contactOfGoat, serviceNeeded);
   goats.push(addGoat);
 
-  form.reset();
+  goatForm.reset();
 }
 
 
 // var goatInNeed = document.getElementById('goat-in-need');
 // var goatGuardian = document.getElementById('goat-guardian');
 
-goatInNeed.addEventListener('click', functionName);
-goatGuardian.addEventListener('click', secondFunctionName);
+// goatInNeed.addEventListener('click', functionName);
+// goatGuardian.addEventListener('click', secondFunctionName);
 
 // function selectForm(event) {
 //   if(goatInNeed.checked) {
