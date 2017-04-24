@@ -47,6 +47,13 @@ function handleGoatFormSubmit(event) {
   // storing the value of the input in an empty array of the constructor
   var addGoat = new Goat(nameOfGoat, ageOfGoat, locationOfGoat, contactOfGoat, serviceNeeded);
   goats.push(addGoat);
+
+  try {
+    localStorage.goats = JSON.stringify(goats)
+  } catch (error){
+    console.log('something went wrong!', error);
+  }
+
   goatForm.reset();
 }
 
@@ -64,6 +71,13 @@ function handleGuardianFormSubmit(event) {
   // instantiate new Guardian using form values with Guardian constructor and push to guardians array
   var addGuardian = new Guardian(nameOfGuardian, locationOfGuardian, contactOfGuardian, serviceOffered);
   guardians.push(addGuardian);
+
+  try {
+    localStorage.guardians = JSON.stringify(guardians);
+  } catch (error){
+    console.log('something went wrong!', error);
+  }
+
   guardianForm.reset();
 }
 
