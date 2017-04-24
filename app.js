@@ -5,9 +5,23 @@
 var goatForm = document.getElementById('goat-form');
 goatForm.addEventListener('submit', handleGoatFormSubmit);
 
+// constructor for Goat in need
+function Goat(goatName, goatAge, goatLocation, serviceNeeded, contact, src) {
+  this.goatName = goatName;
+  this.goatAge = goatAge;
+  this.goatLocation = goatLocation;
+  this.serviceNeeded = serviceNeeded;
+  this.contact = contact;
+  this.goatImage = src;
+}
 
-
-
+// contructor for Goat Guardian
+function Guardian(author, authorLocation, authorContact, serviceOffered){
+  this.author = author;
+  this.authorLocation = authorLocation;
+  this.authorContact = authorContact;
+  this.serviceOffered = serviceOffered;
+}
 
 function handleGoatFormSubmit(event) {
   event.preventDefault();
@@ -18,7 +32,12 @@ function handleGoatFormSubmit(event) {
   var ageOfGoat = goatForm.ageOfGoat.value;
   var locationOfGoat = goatForm.locationOfGoat.value;
   var contactOfGoat = goatForm.contactOfGoat.value;
-  var serviceNeeded = goatForm.contactOfGoat.value;
-
-
+  var serviceNeeded = goatForm.serviceNeeded.value;
 }
+
+
+
+
+
+
+
