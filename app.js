@@ -51,4 +51,3 @@ goatGuardian.addEventListener('click', secondFunctionName);
 //   } else {
 //     console.log('something went wrong');
 //   }
-
