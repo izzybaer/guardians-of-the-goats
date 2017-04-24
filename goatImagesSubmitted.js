@@ -8,6 +8,7 @@ try {
   console.log('problem getting info', error);
 }
 // Create objects for all 9 goats images after user press 'Submit' button
+
 var goats = [
   new goats('goat_1', 'Goat_1.jpg'),
   new goats('goat_2', 'Goat_2.jpg'),
@@ -22,6 +23,7 @@ var goats = [
 
 // constructor for the goatImages
 function goats(name, filename) {
+
   this.name = name;
   this.filename = 'img/goat_images/' + filename;
 }
@@ -34,6 +36,7 @@ mouseoverImages.appendChild(imageUL);
 // create a for loop to display all images in img folder onto the page
 var imageElement;
 var imageLI;
+
 for(var i=0; i<goats.length; i++) {
   imageElement = document.createElement('img');
   imageLI = document.createElement('li');
