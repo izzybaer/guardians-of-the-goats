@@ -9,11 +9,6 @@ try {
 }
 
 
-
-
-
-
-
 function guardianField() {
   var guardiansList = document.getElementById('guardians-list');
   var div;
