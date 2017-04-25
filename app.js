@@ -1,10 +1,27 @@
-
 'use strict';
 
-var goats = [];
 var guardians = [];
 
-// grab goat form from html and assigning it to var goatForm
+var goats = [
+  new Goat('Duncan', 16, 'Seattle', 'foster', 'duncan@summail.com', 'img/Goat-in-glasses.jpg'),
+  new Goat('Ben', 2, 'Redmond', 'transportation', 'J3234@summail.com', 'img/Goat_1.jpg'),
+  new Goat('Heraldo', 5, 'Sammamish', 'rescue', 'Guiar_Boy@summail.com', 'img/Goat_2.jpg'),
+  new Goat('Shyanne', 12, 'Spokane', 'foster', 'Jakes@summail.com', 'img/Goat_3.jpg'),
+  new Goat('Biatress', 3, 'Black Diamond', 'adpotion', 'Yoyoyo@summail.com', 'img/Goat_4.jpg'),
+  new Goat('Heratio', 12, 'Snohomish', 'donation', 'crackler@summail.com', 'img/Goat_5.jpg'),
+  new Goat('Anette', 8, 'Walla Walla', 'housing', 'goatlover@summail.com', 'img/Goat_6.jpg'),
+  new Goat('Madeline', 7, 'Bellingham', 'foster', 'Meghan@summail.com', 'img/Goat_7.jpg'),
+  new Goat('Charles', 1, 'Covington', 'adoption', 'LEROYJENKINS@summail.com', 'img/Goat_8.jpg'),
+];
+
+try {
+  localStorage.goats = JSON.stringify(goats);
+} catch (error) {
+  console.log('Summits brrrreeeeken.');
+}
+
+
+// grab goat form from html and assignin it to var goatForm
 // add event listener
 var goatForm = document.getElementById('goat-form');
 goatForm.addEventListener('submit', handleGoatFormSubmit);
@@ -23,6 +40,8 @@ function Goat(goatName, goatAge, goatLocation, serviceNeeded, contact, src) {
   this.contact = contact;
   this.goatImage = src;
 }
+
+
 
 // contructor for Goat Guardian
 function Guardian(guardianName, guardianLocation, guardianContact, serviceOffered){
