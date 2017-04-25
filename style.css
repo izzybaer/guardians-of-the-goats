@@ -3,16 +3,47 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  z-index: 0;
 }
 
 .main {
   margin: 0 auto;
   width: 960px;
-  height: 1000px ;
+  height: 100% ;
   border: 2px solid blue;
   /*background-color: blue;*/
 }
 
-#guardians-list {
+.guardian-wrap {
+  position: relative;
+  width: 300px;
+  margin-left: 14px;
+  margin-bottom: 20px;
+  display: inline-block;
+  background-color: beige;
+}
 
+.guardian-wrap img {
+  position: absolute;
+  display: inline;
+  margin-left: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.info-wrap {
+  height: 65%;
+  width: 100%;
+  margin-top: 20%;
+  display: inline-block;
+  background-color: blue;
+  border: 2 px solid black;
+}
+
+.name {
+  margin-top: 40px;
 }
