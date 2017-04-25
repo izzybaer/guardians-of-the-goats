@@ -20,7 +20,6 @@ try {
   console.log('Summits brrrreeeeken.');
 }
 
-
 // grab goat form from html and assignin it to var goatForm
 // add event listener
 var goatForm = document.getElementById('goat-form');
@@ -42,22 +41,23 @@ function Goat(goatName, goatAge, goatLocation, serviceNeeded, contact, src) {
 }
 
 // contructor for Goat Guardian
-function Guardian(guardianName, guardianLocation, guardianContact, serviceOffered){
+function Guardian(guardianName, guardianLocation, guardianContact, serviceOffered, src){
   this.guardianName = guardianName;
   this.guardianLocation = guardianLocation;
   this.guardianContact = guardianContact;
   this.serviceOffered = serviceOffered;
+  this.guardianImage = src;
 }
 
 // postDefaultGuardians() instantiates new Guardians and pushes them to goats array and saves to local storage
 function postDefaultGuardians(){
   var defaultGuardians = [
-    new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I have never eaten a goat in my care, and never will.'),
-    new Guardian('Evett', 'Seattle, WA', 'evett@hascoolshoes.com', 'I will drive a goat around in my new Porsche'),
-    new Guardian('Dustin', 'Seattle, WA', 'dustin@mycountertops.com', 'I will ride a goat to the gym'),
-    new Guardian('Matthew', 'Seattle, WA', 'lions@areawesome.com', 'I will dress goats up in sweaters and pet them for hours'),
-    new Guardian('Ben', 'Lynnwood, WA', 'DnD5e@rules.com', 'I will raise your goat as a Bard'),
-    new Guardian('Duncan', 'Seattle, WA', 'Duncan@donuts.hasntheardthatbefore.com', 'I teach goats how to hack'),
+    new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I have never eaten a goat in my care, and never will.', 'adorableGoat.jpg'),
+    // new Guardian('Evett', 'Seattle, WA', 'evett@hascoolshoes.com', 'I will drive a goat around in my new Porsche'),
+    // new Guardian('Dustin', 'Seattle, WA', 'dustin@mycountertops.com', 'I will ride a goat to the gym'),
+    // new Guardian('Matthew', 'Seattle, WA', 'lions@areawesome.com', 'I will dress goats up in sweaters and pet them for hours'),
+    // new Guardian('Ben', 'Lynnwood, WA', 'DnD5e@rules.com', 'I will raise your goat as a Bard'),
+    // new Guardian('Duncan', 'Seattle, WA', 'Duncan@donuts.hasntheardthatbefore.com', 'I teach goats how to hack'),
   ];
 
   for (var i = 0; i < defaultGuardians.length; i++){
@@ -108,9 +108,10 @@ function handleGuardianFormSubmit(event) {
   var locationOfGuardian = guardianForm.locationOfGuardian.value;
   var contactOfGuardian = guardianForm.contactOfGuardian.value;
   var serviceOffered = guardianForm.serviceOffered.value;
+  var guardianImage = guardianForm.guardianImage.value;
 
   // instantiate new Guardian using form values with Guardian constructor and push to guardians array
-  var addGuardian = new Guardian(nameOfGuardian, locationOfGuardian, contactOfGuardian, serviceOffered);
+  var addGuardian = new Guardian(nameOfGuardian, locationOfGuardian, contactOfGuardian, serviceOffered, guardianImage);
   guardians.push(addGuardian);
 
   try {
