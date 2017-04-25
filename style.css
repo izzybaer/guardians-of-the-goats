@@ -17,6 +17,7 @@
 .guardian-wrap {
   position: relative;
   display: inline-block;
+  height: 300px;
   width: 300px;
   margin-left: 14px;
   margin-bottom: 20px;
@@ -39,9 +40,15 @@
   display: inline-block;
   background-color: beige;
   border: 2px solid black;
-  /*border-radius: 2%;  */
+  overflow: auto;
+}
+
+.info-wrap p {
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .name {
   margin-top: 40px;
+  font-weight: bold;
 }

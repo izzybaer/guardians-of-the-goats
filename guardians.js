@@ -24,7 +24,7 @@ function guardianField() {
 
     guardianDisplay = document.createElement('img');
     if (guardians[i].guardianImage == ''){
-      guardianDisplay.src = 'img/shield-icon.png';
+      guardianDisplay.src = 'img/goat-in-glasses.jpg';
       guardiansList.appendChild(guardianWrap);
       guardianWrap.appendChild(guardianDisplay);
     } else {

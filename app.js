@@ -57,7 +57,7 @@ function postDefaultGuardians(){
     new Guardian('Dustin', 'Seattle, WA', 'dustin@mycountertops.com', 'I will ride a goat to the gym', 'adorableGoat.jpg'),
     new Guardian('Matthew', 'Seattle, WA', 'lions@areawesome.com', 'I will do parkour with them', 'adorableGoat.jpg'),
     new Guardian('Ben', 'Lynnwood, WA', 'DnD5e@rules.com', 'I will raise your goat as a Bard', 'adorableGoat.jpg'),
-    new Guardian('Duncan', 'Seattle, WA', 'Duncan@donuts.hasntheardthatbefore.com', 'I teach goats how to hack', 'adorableGoat.jpg'),
+    new Guardian('Duncan', 'Seattle, WA', 'Duncan@donuts.lamejoke.com', 'I teach goats how to hack', 'adorableGoat.jpg'),
   ];
 
   for (var i = 0; i < defaultGuardians.length; i++){
