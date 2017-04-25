@@ -3,7 +3,7 @@
 var guardians = [];
 
 var goats = [
-  new Goat('Duncan', 16, 'Seattle', 'foster', 'duncan@summail.com', 'img/Goat-in-glasses.jpg'),
+  new Goat('Duncan', 16, 'Seattle', 'foster', 'duncan@summail.com', 'img/goat-in-glasses.jpg'),
   new Goat('Ben', 2, 'Redmond', 'transportation', 'J3234@summail.com', 'img/Goat_1.jpg'),
   new Goat('Heraldo', 5, 'Sammamish', 'rescue', 'Guiar_Boy@summail.com', 'img/Goat_2.jpg'),
   new Goat('Shyanne', 12, 'Spokane', 'foster', 'Jakes@summail.com', 'img/Goat_3.jpg'),
@@ -41,8 +41,6 @@ function Goat(goatName, goatAge, goatLocation, serviceNeeded, contact, src) {
   this.goatImage = src;
 }
 
-
-
 // contructor for Goat Guardian
 function Guardian(guardianName, guardianLocation, guardianContact, serviceOffered){
   this.guardianName = guardianName;
@@ -51,6 +49,7 @@ function Guardian(guardianName, guardianLocation, guardianContact, serviceOffere
   this.serviceOffered = serviceOffered;
 }
 
+// postDefaultGuardians() instantiates new Guardians and pushes them to goats array and saves to local storage
 function postDefaultGuardians(){
   var defaultGuardians = [
     new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I have never eaten a goat in my care, and never will.'),
