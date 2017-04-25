@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 .main {
@@ -15,4 +16,29 @@
 
 #guardians-list {
 
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+.instructions {
+  float: right;
+  width: 400px;
+}
+
+.rescue-links {
+  height:250px;
+  width:250px;
+
+}
+
+.instructions-ul {
+  list-style-image: url("img/bulletpoints-goatface.jpg");
+
+}
+
+a {
+ text-decoration: none;
 }
