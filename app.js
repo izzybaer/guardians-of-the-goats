@@ -32,6 +32,16 @@ function Guardian(guardianName, guardianLocation, guardianContact, serviceOffere
   this.serviceOffered = serviceOffered;
 }
 
+var defaultGuardians = function(){
+  new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I have never eaten a goat in my care, and never will.');
+  new Guardian('Evett', 'Seattle, WA', 'evett@hascoolshoes.com', 'I will drive a goat around in my new Porsche');
+  new Guardian('Dustin', 'Seattle, WA', 'dustin@mycountertops.com', 'I will ride a goat to the gym');
+  new Guardian('Matthew', 'Seattle, WA', 'lions@areawesome.com', 'I will dress goats up in sweaters and pet them for hours');
+  new Guardian('Ben', 'Lynnwood, WA', 'DnD5e@rules.com', 'I will raise your goat as a Bard');
+  new Guardian('Duncan', 'Seattle, WA', 'Duncan@donuts.hasntheardthatbefore.com', 'I teach goats how to hack');
+};
+
+
 
 function handleGoatFormSubmit(event) {
   event.preventDefault();
