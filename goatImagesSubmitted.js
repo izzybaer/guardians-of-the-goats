@@ -1,4 +1,4 @@
-'use strict';
+'user strict';
 
 var goats = [];
 
