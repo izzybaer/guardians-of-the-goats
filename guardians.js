@@ -11,16 +11,33 @@ try {
 
 
 
-var createDiv;
-var guardiansList = document.getElementById('guardians-list');
 
 
-function abc() {
+
+function guardianField() {
+  var guardiansList = document.getElementById('guardians-list');
+  var div;
+  var infoField;
   for(var i=0; i <guardians.length; i++) {
-    createDiv = document.createElement('div');
-    createDiv.textContent = guardians[i].guardianName;
-    guardiansList.appendChild(createDiv);
+    div = document.createElement('div');
+    guardiansList.appendChild(div);
+
+    infoField = document.createElement('p');
+    infoField.textContent = guardians[i].guardianName;
+    div.appendChild(infoField);
+
+    infoField = document.createElement('p');
+    infoField.textContent = guardians[i].guardianLocation;
+    div.appendChild(infoField);
+
+    infoField = document.createElement('p');
+    infoField.textContent = guardians[i].guardianContact;
+    div.appendChild(infoField);
+
+    infoField = document.createElement('p');
+    infoField.textContent = guardians[i].serviceOffered;
+    div.appendChild(infoField);
   }
 }
 
-abc();
+guardianField();
