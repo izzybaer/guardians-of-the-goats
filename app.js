@@ -52,10 +52,10 @@ function Guardian(guardianName, guardianLocation, guardianContact, serviceOffere
 // postDefaultGuardians() instantiates new Guardians and pushes them to goats array and saves to local storage
 function postDefaultGuardians(){
   var defaultGuardians = [
-    new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I have never eaten a goat in my care, and never will.', 'adorableGoat.jpg'),
-    new Guardian('Evett', 'Seattle, WA', 'evett@hascoolshoes.com', 'I will drive a goat around in my new Porsche', 'adorableGoat.jpg'),
+    new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I have never eaten a goat.', 'adorableGoat.jpg'),
+    new Guardian('Evett', 'Seattle, WA', 'evett@hascoolshoes.com', 'I will buy it a porsche', 'adorableGoat.jpg'),
     new Guardian('Dustin', 'Seattle, WA', 'dustin@mycountertops.com', 'I will ride a goat to the gym', 'adorableGoat.jpg'),
-    new Guardian('Matthew', 'Seattle, WA', 'lions@areawesome.com', 'I will dress goats up in sweaters and pet them for hours', 'adorableGoat.jpg'),
+    new Guardian('Matthew', 'Seattle, WA', 'lions@areawesome.com', 'I will do parkour with them', 'adorableGoat.jpg'),
     new Guardian('Ben', 'Lynnwood, WA', 'DnD5e@rules.com', 'I will raise your goat as a Bard', 'adorableGoat.jpg'),
     new Guardian('Duncan', 'Seattle, WA', 'Duncan@donuts.hasntheardthatbefore.com', 'I teach goats how to hack', 'adorableGoat.jpg'),
   ];

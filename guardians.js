@@ -23,9 +23,15 @@ function guardianField() {
     infoWrap.setAttribute('class', 'info-wrap');
 
     guardianDisplay = document.createElement('img');
-    guardianDisplay.src = guardians[i].guardianImage;
-    guardiansList.appendChild(guardianWrap);
-    guardianWrap.appendChild(guardianDisplay);
+    if (guardians[i].guardianImage == ''){
+      guardianDisplay.src = 'img/shield-icon.png';
+      guardiansList.appendChild(guardianWrap);
+      guardianWrap.appendChild(guardianDisplay);
+    } else {
+      guardianDisplay.src = guardians[i].guardianImage;
+      guardiansList.appendChild(guardianWrap);
+      guardianWrap.appendChild(guardianDisplay);
+    }
 
 
 

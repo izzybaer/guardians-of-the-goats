@@ -16,11 +16,10 @@
 
 .guardian-wrap {
   position: relative;
+  display: inline-block;
   width: 300px;
   margin-left: 14px;
   margin-bottom: 20px;
-  display: inline-block;
-  background-color: beige;
 }
 
 .guardian-wrap img {
@@ -30,9 +29,7 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border: 2px solid black;
 }
 
 .info-wrap {
@@ -40,8 +37,9 @@
   width: 100%;
   margin-top: 20%;
   display: inline-block;
-  background-color: blue;
-  border: 2 px solid black;
+  background-color: beige;
+  border: 2px solid black;
+  /*border-radius: 2%;  */
 }
 
 .name {
