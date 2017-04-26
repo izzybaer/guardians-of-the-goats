@@ -12,7 +12,7 @@ var goats = [
   new Goat('Anette', 8, 'Walla Walla', 'housing', 'goatlover@summail.com', 'img/Goat_6.jpg'),
   new Goat('Madeline', 7, 'Bellingham', 'foster', 'Meghan@summail.com', 'img/Goat_7.jpg'),
   new Goat('Charles', 1, 'Covington', 'adoption', 'LEROYJENKINS@summail.com', 'img/Goat_8.jpg'),
-];
+];  
 
 try {
   goats=JSON.parse(localStorage.goats);
