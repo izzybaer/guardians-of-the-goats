@@ -71,10 +71,10 @@ button {
 }
 
 .resources-header {
-  font-size: 60px;
+  font-size: 80px;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .rescues {
@@ -85,11 +85,11 @@ button {
 }
 
 .rescue-links {
-  height:250px;
-  width:250px;
+  height:320px;
+  width:315px;
   margin: 0 auto;
   display: inline-block;
-  border-radius: 13px;
+  border-radius: 17px;
   text-align:justify;
 }
 
@@ -100,7 +100,8 @@ image {
 
 
 a {
- text-decoration: none;
+ text-decoration-line: none;
+ text-decoration-color: #595755;
 }
 
 
@@ -123,11 +124,11 @@ a {
 }
 
 .instructions-header {
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
 }
 
 iframe {
@@ -139,11 +140,17 @@ iframe {
 
 .instructions-ul {
   list-style-image: url("img/bulletpoints-goatface.jpg");
-  font-family: 'Vollkorn', serif;
-  font-size: 20px;
+  font-family: 'Lobster Two', cursive;
+  font-size: 25px;
+}
+
+.instructions-li {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
-title, .resources-header, .instructions-header {
-  font-family: 'Lobster', cursive;
+.resources-header, .instructions-header {
+  font-family: 'Lobster Two', cursive;
+  color: #3D3C3A;
 }
