@@ -12,9 +12,63 @@ html, body {
 }
 
 
+html, body, div.video-container, video {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+video{
+  height: 100%;
+  width: 100%;
+  object-fit : cover;
+}
+
+.video-container {
+  overflow: hidden;
+  background: #000;
+  display: block !important;
+  position: relative;
+  z-index: -100;
+  margin-top: 63px;
+}
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.title-container {
+  z-index: 10;
+  color: #FFF;
+  position: absolute;
+}
+
+.adjustedHeight {
+  /*height: calc(100% - 77px);*/
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+main {
+  /*position: absolute;*/
+  margin: 0 auto;
+  width: 1140px;
+  color: black;
+}
+
+main p {
+  color: black;
+}
+
 .nav-bar {
   position: fixed;
   display: inline-block;
+  width: 100%;
   min-height: 63px;
   background-color: #333333;
 }
@@ -23,8 +77,24 @@ html, body {
   max-height: 63px;
   margin: 0 auto;
   max-width: 1140px;
-  background-color: #blue;
   z-index: 100;
+}
+
+.nav-navbar {
+  display: inline-block;
+  width: 500px;
+}
+
+.logo-div {
+  width: auto;
+  display: inline-block;
+}
+
+.logo-div img{
+  display: inline-block;
+  margin-top: 5px;
+  max-height: 55px;
+  max-width: 55px;
 }
 
 li {
@@ -33,26 +103,4 @@ li {
   list-style-type: none;
   display: inline-block;
   width: auto;
-}
-
-
-video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(video/Go-Goat.jpg) no-repeat;
-    background-size: cover;
-}
-
-.content {
-  
 }
