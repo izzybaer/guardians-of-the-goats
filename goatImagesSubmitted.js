@@ -14,6 +14,7 @@ function displayGoatInformation() {
   var div;
   var goatDisplay;
   var infoField;
+  var nameField;
 
   for(var i=0; i <goats.length; i++) {
     div = document.createElement('div');
@@ -23,11 +24,16 @@ function displayGoatInformation() {
     mouseOverImages.appendChild(div);
     div.appendChild(goatDisplay);
 
+    nameField = document.createElement('div');
+    nameField.setAttribute('class', 'name');
+    nameField.textContent = goats[i].goatName;
+    div.appendChild(nameField);
 
-    infoField = document.createElement('p');
-    infoField.setAttribute('class', 'name');
-    infoField.textContent = goats[i].goatName;
-    div.appendChild(infoField);
+
+    // infoField = document.createElement('p');
+    // infoField.setAttribute('class', 'name');
+    // infoField.textContent = goats[i].goatName;
+    // div.appendChild(infoField);
 
     infoField = document.createElement('p');
     infoField.setAttribute('class', 'age');
