@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.nav-bar {
+  min-height: 63px;
+  background-color: #333333;
+}
+
+.nav-bar-info {
+  max-width: 1140px;
+  background-color: #333333;
+}
+
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(video/Go-Goat.jpg) no-repeat;
+    background-size: cover;
+}
