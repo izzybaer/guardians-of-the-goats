@@ -74,7 +74,7 @@ main p {
 }
 
 .nav-bar-info {
-  max-height: 63px;
+  min-height: 63px;
   margin: 0 auto;
   max-width: 1140px;
   z-index: 100;
@@ -83,6 +83,7 @@ main p {
 .nav-navbar {
   display: inline-block;
   width: 500px;
+  float: right;
 }
 
 .logo-div {
@@ -92,13 +93,26 @@ main p {
 
 .logo-div img{
   display: inline-block;
-  margin-top: 5px;
-  max-height: 55px;
-  max-width: 55px;
+  margin-top: 9px;
+  max-height: 45px;
+  max-width: 45px;
+}
+
+.logo-title {
+  display: inline-flex;
+  width: auto;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 2em;
+}
+
+ul {
+  margin-top: 27px;
 }
 
 li {
-  margin-top: 23px;
+  /*margin-top: 23px;*/
   margin-left: 23px;
   list-style-type: none;
   display: inline-block;
