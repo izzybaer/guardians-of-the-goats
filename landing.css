@@ -3,17 +3,36 @@
   padding: 0;
   width: 100%;
   box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 
 .nav-bar {
+  position: fixed;
+  display: inline-block;
   min-height: 63px;
   background-color: #333333;
 }
 
 .nav-bar-info {
+  max-height: 63px;
+  margin: 0 auto;
   max-width: 1140px;
-  background-color: #333333;
+  background-color: #blue;
+  z-index: 100;
+}
+
+li {
+  margin-top: 23px;
+  margin-left: 23px;
+  list-style-type: none;
+  display: inline-block;
+  width: auto;
 }
 
 
@@ -32,4 +51,8 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(video/Go-Goat.jpg) no-repeat;
     background-size: cover;
+}
+
+.content {
+  
 }
