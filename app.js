@@ -118,7 +118,6 @@ function handleGuardianFormSubmit(event) {
   } catch (error){
     console.log('something went wrong!', error);
   }
-
   guardianForm.reset();
 }
 
@@ -135,6 +134,7 @@ function showForm(event) {
     goatForm.style.display = 'none';
     //gray out this button through css
     //ungray the other button
+    goatGuardianButton.style.border='';
   } else if (goatInNeedButton === event.target) {
     goatForm.style.display = 'block';
     guardianForm.style.display = 'none';

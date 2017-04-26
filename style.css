@@ -5,14 +5,61 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F1F1F0;
+}
+
 .main {
   margin: 0 auto;
   width: 960px;
   height: 1000px ;
-  border: 2px solid blue;
-  /*background-color: blue;*/
 }
 
-#guardians-list {
+#select-form {
+  padding: 20px;
+  background-image: url(http://www.gifts-of-zion.com/wp-content/uploads/2013/04/Parchment-background-small.jpg);
+  background-repeat: no-repeat;
+  height: 50%;
+  border-radius: 10px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
 
+form {
+  position: relative;
+
+}
+
+/*form:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}*/
+
+input {
+width:auto;
+}
+
+button:active {
+  transform: translate(1px, 1px);
+}
+
+button {
+  width:auto;
+  padding: 30px;
+  box-shadow: inset 0 0 10px #000000;
+  border: 1px inset #b37d00 ;
+  text-decoration: none ;
+  display: inline-block ;
+}
+
+#goat-guardian {
+  margin-left: 35%;
 }
