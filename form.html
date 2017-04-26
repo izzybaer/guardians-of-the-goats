@@ -5,34 +5,51 @@
   </head>
   <body>
     <div class='main'>
-      <div id="select-form">
+
+      <div class="goat-banner-form">
         <button id='goat-guardian' class='goatButton'>Goat Guardian</button>
         <button id='goat-in-need' class='goatButton'>Goat In Need</button>
+      </div>
+
+      <div id="selectform" style='display: none'>
+
           <div id='goat-div'>
             <form id='goat-form' style='display: none'>
-              <span>Goat Name: </span>
-              <input name='nameOfGoat' type='text' placeholder='Goat Name' />
-              <span>Age: </span>
-              <input name='ageOfGoat' type='number' placeholder='Goat Age' />
-              <span>Location: </span>
-              <input name='locationOfGoat' type='text' placeholder='Goat Location' required />
-              <span>Needs: </span>
-              <textarea name='serviceNeeded' type='text' placeholder='What help does this goat need?' required></textarea>
-              <span>E-Mail: </span>
-              <input name='contactOfGoat' type='text' placeholder='Email Address' required />
-              <span>Image Url: </span>
-              <input name='goatImage' type='url' placeholder='Upload a picture' />
-              <button type='submit'> Submit </button>
+              <p class="third"> <label>Goat Name: </label>
+              <input name='nameOfGoat' type='text'</p>
+
+              <p class="third"> <label>Age: </label>
+              <input name='ageOfGoat' type='number'/> </p>
+
+              <p class="third"> <label>Location: </label>
+              <input name='locationOfGoat' type='text' required /> </p>
+
+              <p class="half"> <label>E-Mail: </label>
+              <input name='contactOfGoat' type='text' required /> </p>
+
+              <p class="half"> <label>Image Url: </label>
+              <input name='goatImage' type='url'/> </p>
+
+              <p class="full"> <label>Needs: </label>
+              <textarea name='serviceNeeded' type='text' required></textarea> </p>
+
+              <p> <button class="submit-box" type='submit'> Submit </button> </p>
             </form>
           </div>
+
             <div id='guardian-div'>
               <form id='goat-guardian-form' style='display: none'>
-                <input name='nameOfGuardian' type='text' placeholder='Name' />
-                <input name='locationOfGuardian' type='text' placeholder='City and State' />
-                <input name='contactOfGuardian' type='email' placeholder='Email Address' />
-                <input name='guardianImage' type='text' placeholder='Upload a picture' />
-                <textarea name='serviceOffered' type='text' placeholder='How can you help a goat?'></textarea>
-                <button type='submit'> Submit </button>
+                <p class="fourth"> <label> Name: </label> <input name='nameOfGuardian' type='text'/>
+
+                <p class="fourth"> <label> Location: </label> <input name='locationOfGuardian' type='text' placeholder='City and State' />
+
+                <p class="fourth"> <label> E-mail: </label> <input name='contactOfGuardian' type='email' placeholder='Email Address' />
+
+                <p class="fourth"> <label> Upload Picture: </label><input name='guardianImage' type='text' placeholder='Picture URL' />
+
+                <p class="full"> <label> How can you help a goat? </label><textarea name='serviceOffered' type='text' placeholder='How can you help a goat?'></textarea>
+
+                <p> <button class="submit-box" type='submit'> Submit </button>
               </form>
             </div>
         </div>
