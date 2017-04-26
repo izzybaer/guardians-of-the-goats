@@ -13,8 +13,10 @@ function displayGoatInformation() {
   var mouseOverImages = document.getElementById('mouseover_images');
   var div;
   var goatDisplay;
+  var info;
   var infoField;
-  var nameField;
+  var emailIcon = document.createElement('img');
+  emailIcon.src = 'img/mail.png';
 
   for(var i=0; i <goats.length; i++) {
     div = document.createElement('div');
@@ -24,36 +26,35 @@ function displayGoatInformation() {
     mouseOverImages.appendChild(div);
     div.appendChild(goatDisplay);
 
-    nameField = document.createElement('div');
-    nameField.setAttribute('class', 'name');
-    nameField.textContent = goats[i].goatName;
-    div.appendChild(nameField);
+    info = document.createElement('p');
+    info.setAttribute('class', 'name');
+    info.textContent = goats[i].goatName;
+    div.appendChild(info);
 
-
-    // infoField = document.createElement('p');
-    // infoField.setAttribute('class', 'name');
-    // infoField.textContent = goats[i].goatName;
-    // div.appendChild(infoField);
-
-    infoField = document.createElement('p');
-    infoField.setAttribute('class', 'age');
-    infoField.textContent = goats[i].goatAge;
+    infoField = document.createElement('div');
+    infoField.setAttribute('class', 'infoDiv');
     div.appendChild(infoField);
 
-    infoField = document.createElement('p');
-    infoField.setAttribute('class', 'location');
-    infoField.textContent = goats[i].goatLocation;
-    div.appendChild(infoField);
+    info = document.createElement('p');
+    info.setAttribute('class', 'age');
+    info.textContent = 'Age: ' + goats[i].goatAge;
+    infoField.appendChild(info);
 
-    infoField = document.createElement('p');
-    infoField.setAttribute('class', 'service-needed');
-    infoField.textContent = goats[i].serviceNeeded;
-    div.appendChild(infoField);
+    info = document.createElement('p');
+    info.setAttribute('class', 'location');
+    info.textContent = 'Location: ' + goats[i].goatLocation;
+    infoField.appendChild(info);
 
-    infoField = document.createElement('p');
-    infoField.setAttribute('class', 'contact');
-    infoField.textContent = goats[i].contact;
-    div.appendChild(infoField);
+    info = document.createElement('p');
+    info.setAttribute('class', 'service-needed');
+    info.textContent = 'Need: ' + goats[i].serviceNeeded;
+    infoField.appendChild(info);
+
+    info = document.createElement('p');
+    info.setAttribute('class', 'contact');
+    info.textContent = goats[i].contact;
+    infoField.appendChild(info);
+
   }
 }
 
