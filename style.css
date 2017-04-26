@@ -7,27 +7,28 @@
 }
 
 html, body {
-    background-color: #B6D6D4;
+
     height: auto;
     width: 100%;
+
 }
 
 
 .main {
   margin: 0 auto;
+
   width: 960px;
   height: 100% ;
   /*border: 2px solid blue;*/
   /*background-color: blue;*/
 }
 
-#select-form {
+#selectform {
+  float: left;
   padding: 20px;
-  background-image: url(http://www.gifts-of-zion.com/wp-content/uploads/2013/04/Parchment-background-small.jpg);
   background-repeat: no-repeat;
-  height: 50%;
-  border-radius: 10px;
   font-family: Tahoma, Geneva, sans-serif;
+  background: linear-gradient(to top, #EDEDED, white);
 }
 
 form {
@@ -51,24 +52,38 @@ form {
 
 input {
 width:auto;
+height: 40px;
+padding: 5px;
+  margin-top: 5px;
 }
 
+textarea {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+label {
+  padding-bottom: 20px;
+
+}
 button:active {
   transform: translate(1px, 1px);
 }
 
 button {
   width:auto;
-  padding: 30px;
-  box-shadow: inset 0 0 10px #000000;
-  border: 1px inset #b37d00 ;
+  padding: 20px;
+  /*box-shadow: inset 0 0 10px #000000;*/
+  /*border: 1px inset #b37d00 ;*/
+    border: 1px #333 ;
   text-decoration: none ;
   display: inline-block ;
+  background-color: #333;
+  color: White;
+  font-size: 20px;
+
 }
 
-#goat-guardian {
-  margin-left: 35%;
-}
 
 .resources-header {
   font-size: 80px;
@@ -153,4 +168,84 @@ iframe {
 .resources-header, .instructions-header {
   font-family: 'Lobster Two', cursive;
   color: #3D3C3A;
+}
+
+.goat-banner-form {
+  background-image: url("img/Funny-Goat-With-Glasses960.jpg");
+  height: 424px;
+
+}
+
+.goatButton {
+  background-color: #333;
+  color: White;
+  position: absolute;
+  font-size: 20px;
+  width: 205px;
+;
+}
+
+
+#goat-guardian {
+ margin-top: 200px;
+}
+
+#goat-in-need {
+  margin-top: 300px;
+}
+
+.third {
+  /*border: 1px solid black;*/
+  display: inline-block;
+  width: calc(100% / 3 );
+  padding: 5px;
+  float: left;
+}
+
+.third input {
+  width: 100%;
+
+}
+
+.half {
+  display: inline-block;
+  width: 50%;
+  padding: 5px;
+  float: left;
+}
+
+.half input {
+  width: 100%;
+}
+
+.full {
+  display: inline-block;
+  width: 89%;
+  padding: 5px;
+  float: left;
+}
+
+.full textarea {
+  height: 100px;
+}
+
+
+
+.submit-box {
+  padding: 15px;
+  float: left;
+  width: auto;
+  margin-top: 30px;
+  height: 100px;
+}
+
+.fourth {
+  display: inline-block;
+  width: calc(100% / 4 );
+  padding: 5px;
+  float: left;
+}
+
+.fourth input {
+  width: 100%;
 }

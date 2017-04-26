@@ -12,7 +12,7 @@ var goats = [
   new Goat('Anette', 8, 'Walla Walla', 'housing', 'goatlover@summail.com', 'img/Goat_6.jpg'),
   new Goat('Madeline', 7, 'Bellingham', 'foster', 'Meghan@summail.com', 'img/Goat_7.jpg'),
   new Goat('Charles', 1, 'Covington', 'adoption', 'LEROYJENKINS@summail.com', 'img/Goat_8.jpg'),
-];  
+];
 
 try {
   goats=JSON.parse(localStorage.goats);
@@ -133,8 +133,10 @@ goatGuardianButton.addEventListener('click', showForm);
 
 function showForm(event) {
   if (goatGuardianButton === event.target) {
+    selectform.style.display = 'block';
     if (guardianForm.style.display === 'block') {
       guardianForm.style.display = 'none';
+
     }
     guardianForm.style.display = 'block';
     goatForm.style.display = 'none';
@@ -142,6 +144,7 @@ function showForm(event) {
     //ungray the other button
     goatGuardianButton.style.border='';
   } else if (goatInNeedButton === event.target) {
+    selectform.style.display = 'block';
     goatForm.style.display = 'block';
     guardianForm.style.display = 'none';
     //gray out this button through css
