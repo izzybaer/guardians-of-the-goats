@@ -6,16 +6,22 @@
   <body>
     <div class='main'>
       <div id="select-form">
-        <button id='goat-guardian'>Goat Guardian</button>
-        <button id='goat-in-need'>Goat In Need</button>
+        <button id='goat-guardian' class='goatButton'>Goat Guardian</button>
+        <button id='goat-in-need' class='goatButton'>Goat In Need</button>
           <div id='goat-div'>
             <form id='goat-form' style='display: none'>
+              <span>Goat Name: </span>
               <input name='nameOfGoat' type='text' placeholder='Goat Name' />
+              <span>Age: </span>
               <input name='ageOfGoat' type='number' placeholder='Goat Age' />
+              <span>Location: </span>
               <input name='locationOfGoat' type='text' placeholder='Goat Location' required />
-              <input name='contactOfGoat' type='text' placeholder='Email Address' required />
-              <input name='goatImage' type='text' placeholder='Upload a picture' />
+              <span>Needs: </span>
               <textarea name='serviceNeeded' type='text' placeholder='What help does this goat need?' required></textarea>
+              <span>E-Mail: </span>
+              <input name='contactOfGoat' type='text' placeholder='Email Address' required />
+              <span>Image Url: </span>
+              <input name='goatImage' type='url' placeholder='Upload a picture' />
               <button type='submit'> Submit </button>
             </form>
           </div>
