@@ -15,7 +15,7 @@ var goats = [
 ];
 
 try {
-  localStorage.goats = JSON.stringify(goats);
+  goats=JSON.parse(localStorage.goats);
 } catch (error) {
   console.log('Summits brrrreeeeken.');
 }
@@ -65,7 +65,8 @@ function postDefaultGuardians(){
   }
 
   try {
-    localStorage.guardians = JSON.stringify(guardians);
+    // localStorage.guardians = JSON.stringify(guardians);
+    guardians = JSON.parse(localStorage.gaurdians);
   } catch (error){
     console.log('something went wrong!', error);
   }
@@ -114,6 +115,7 @@ function handleGuardianFormSubmit(event) {
   var addGuardian = new Guardian(nameOfGuardian, locationOfGuardian, contactOfGuardian, serviceOffered, guardianImage);
   guardians.push(addGuardian);
 
+
   try {
     localStorage.guardians = JSON.stringify(guardians);
   } catch (error){
@@ -132,6 +134,9 @@ goatGuardianButton.addEventListener('click', showForm);
 
 function showForm(event) {
   if (goatGuardianButton === event.target) {
+    if (guardianForm.style.display === 'block') {
+      guardianForm.style.display = 'none';
+    }
     guardianForm.style.display = 'block';
     goatForm.style.display = 'none';
     //gray out this button through css
