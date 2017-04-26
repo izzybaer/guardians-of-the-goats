@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   color: white;
+  font-family: 'Lora', serif;
 }
 
 html, body {
@@ -18,6 +19,15 @@ html, body, div.video-container, video {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.video-logo {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  z-index: -50;
+  font-size: 3.5em;
+  font-family: 'Lora', serif;
 }
 
 video{
@@ -48,7 +58,6 @@ video{
 }
 
 .adjustedHeight {
-  /*height: calc(100% - 77px);*/
   height: 100%;
   width: 100%;
   padding: 0;
@@ -57,25 +66,33 @@ video{
 main {
   margin: 0 auto;
   height: auto;
-  width: 1140px;
+  /*width: 1140px;*/
+  width: 60%;
   color: black;
-  padding-bottom: 100px;
+  padding-bottom: 115px;
 }
-
-.mission-statement {
-  margin-top: 100px;
-  text-align: center;
-  font-family: 'Lora', serif;
-  font-size: 70px;
-  color: #333;
-}
-
 
 main p {
+  width: 100%;
   line-height: 40px;
   color: black;
   font-size: 30px;
   margin-top: 100px;
+}
+
+.about-us {
+  color: #333;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.mission-statement {
+  margin-top: 115px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 70px;
+  color: #333;
 }
 
 .nav-bar {
@@ -87,6 +104,7 @@ main p {
 }
 
 .nav-bar-info {
+  min-width: 800px;
   min-height: 63px;
   margin: 0 auto;
   max-width: 1140px;
@@ -115,16 +133,16 @@ main p {
   display: inline-flex;
   width: auto;
   position: absolute;
-  margin-top: 15px;
+  margin-top: 19px;
   margin-left: 15px;
-  font-size: 2em;
-  /*font-family: 'Lobster Two', cursive;*/
+  font-size: 1.5em;
   font-family: 'Lora', serif;
-  /*letter-spacing: 3px;*/
+  letter-spacing: 1px;
 }
 
 ul {
-  margin-top: 27px;
+  margin-top: 24px;
+  text-align: right;
 }
 
 li {
