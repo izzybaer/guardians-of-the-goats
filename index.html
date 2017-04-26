@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title> Guardians of the Goats</title>
+  <link rel="stylesheet", type="text/css", href="landing.css" />
   <head>
-    <title> Guardians of the Goats</title>
-    <link rel="stylesheet", type="text/css", href="styles.css" />
-  <head>
-  <body>
-    <main>
-      <header></header>
+    <body>
+      <header>
+        <div class="nav-bar">
+          <div class="nav-bar-info">
+            <div class="logo-div">
+              <img src="img/shadow-goat.png" />
+            </div>
+            <h2 class="logo-title">Guardians of the Goats</h2>
+            <ul class="nav-navbar">
+              <li class="active">
+                <a class="nav-home" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="nav-guardians" href="guardians.html">Guardians</a>
+              </li>
+              <li>
+                <a class="nav-goats" href="goats.html">Goats</a>
+              </li>
+              <li>
+                <a class="nav-forms" href="form.html">Forms</a>
+              </li>
+              <li>
+                <a class="nav-resources" href="resource.html">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
-      <footer></footer>
-    </main>
-  </body>
-</html>
+      <!-- <video playsinline autoplay loop poster="video/Go-Goat.jpg" id="bgvid">
+      <source src="video/Go-Goat.webm" type="video/webm">
+      <source src="video/Go-Goat.mp4" type="video/mp4">
+    </video> -->
+
+
+
+    <div class="container-fluid adjustedHeight">
+      <div class="video-container">
+        <video autoplay loop class="fillWidth">
+          <source src="video/Go-Goat.mp4" type="video/mp4" /> Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+          <img src="video/Go-Goat.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+      <main>
+        <content class="content">
+          <p>When we first came up with the idea for Guardians of the Goats, our goal was to create a place to connect goat advocates throughout the United States. Since then it has blossomed and bloomed, and now it also a place to find goats in need of care or rescue in specific locations. We want to make it easier for people who care to locate goats in need, and to connect with others near them who also want the same things. All over the world goats are abused, sold for slaughter, discarded, and abandoned because of neurological disorders or physical deformities. Goats are innocent creatures that feel pain, fear, and love. At Guardians of the Goats we care about all goats, and want to provide love and care for all that we can.</p>
+
+
+        </content>
+
+        <footer></footer>
+      </main>
+      <script src="landing.js"></script>
+    </body>
+    </html>

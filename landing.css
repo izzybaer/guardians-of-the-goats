@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+
+html, body, div.video-container, video {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+video{
+  height: 100%;
+  width: 100%;
+  object-fit : cover;
+}
+
+.video-container {
+  overflow: hidden;
+  background: #000;
+  display: block !important;
+  position: relative;
+  z-index: -100;
+  margin-top: 63px;
+}
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.title-container {
+  z-index: 10;
+  color: #FFF;
+  position: absolute;
+}
+
+.adjustedHeight {
+  /*height: calc(100% - 77px);*/
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+main {
+  /*position: absolute;*/
+  margin: 0 auto;
+  width: 1140px;
+  color: black;
+}
+
+main p {
+  color: black;
+}
+
+.nav-bar {
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  min-height: 63px;
+  background-color: #333333;
+}
+
+.nav-bar-info {
+  min-height: 63px;
+  margin: 0 auto;
+  max-width: 1140px;
+  z-index: 100;
+}
+
+.nav-navbar {
+  display: inline-block;
+  width: 500px;
+  float: right;
+}
+
+.logo-div {
+  width: auto;
+  display: inline-block;
+}
+
+.logo-div img{
+  display: inline-block;
+  margin-top: 9px;
+  max-height: 45px;
+  max-width: 45px;
+}
+
+.logo-title {
+  display: inline-flex;
+  width: auto;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 2em;
+}
+
+ul {
+  margin-top: 27px;
+}
+
+li {
+  /*margin-top: 23px;*/
+  margin-left: 23px;
+  list-style-type: none;
+  display: inline-block;
+  width: auto;
+}
