@@ -7,19 +7,31 @@
 }
 
 body {
-  /*background:url(img/baby-goat-wallpaper.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-  
-  background-color: #FFF4E5;
+  background-color: #B6D6D4;
 }
 
 .main {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   height: 100% ;
+}
+
+.guardians-list {
+}
+
+.spacer {
+  height: 63px;
+}
+
+.guardians-header {
+ font-size: 80px;
+ text-align: center;
+ padding-top: 75px;
+ padding-bottom: 75px;
+ font-family: 'Lobster Two', cursive;
+ color: #3D3C3A;
+ letter-spacing: 1px;
+ text-shadow: 2px 0 black;
 }
 
 .guardian-wrap {
@@ -27,8 +39,10 @@ body {
   display: inline-block;
   height: 300px;
   width: 300px;
-  margin-left: 55px;
+  margin-left: 58px;
   margin-top: 30px;
+  background-color: #333;
+  border-radius: 15px;
 }
 
 .guardian-wrap img {
@@ -38,19 +52,21 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid #333;
   z-index: 1;
 }
 
 .info-wrap {
-  height: 65%;
+  height: 80%;
   width: 100%;
   margin-top: 20%;
   display: inline-block;
   background-color: beige;
-  border: 2px solid black;
+  border: 2px solid #333;
   overflow: auto;
   opacity: .89;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .info-wrap:hover {
@@ -63,6 +79,11 @@ body {
 }
 
 .name {
-  margin-top: 40px;
+  margin-top: 60px;
+  padding-bottom: 30px;
   font-weight: bold;
+}
+
+.footer {
+  margin-top: 99px;
 }
