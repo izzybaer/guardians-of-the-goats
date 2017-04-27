@@ -11,6 +11,9 @@ html, body {
   background-color: #B6D6D4;
 }
 
+#main {
+  margin-bottom: 200px;
+}
 
 .main {
   margin: 0 auto;
@@ -28,22 +31,7 @@ html, body {
 
 form {
   position: relative;
-
 }
-
-/*form:before {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: #777;
-  box-shadow: 0 15px 10px #777;
-  transform: rotate(-3deg);
-}*/
 
 input {
 width:auto;
@@ -68,15 +56,27 @@ button:active {
 button {
   width:auto;
   padding: 20px;
+  box-shadow: inset 0 0 60px #000000;
+  border: 1px inset #b37d00 ;
   border: 1px #333 ;
   text-decoration: none ;
   display: inline-block ;
   background-color: #333;
   color: White;
   font-size: 20px;
-
 }
 
+
+#resources-header {
+  font-size: 80px;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 19px;
+}
+
+#resources-header, .instructions-header {
+  font-family: 'Lobster Two', cursive;
+}
 
 .resources-header {
   text-shadow: 2px 0 black;
@@ -114,12 +114,10 @@ image {
   margin: 0 auto;
 }
 
-
 a {
  text-decoration-line: none;
  text-decoration-color: #595755;
 }
-
 
 .instructions {
   float: right;
@@ -127,7 +125,6 @@ a {
   margin-right: 20px;
   margin-top: 20px;
 }
-
 
 .instructions-div {
   background-color: #F1F1F0;
@@ -173,9 +170,11 @@ iframe {
 }
 
 .goat-banner-form {
-  background-image: url("img/Funny-Goat-With-Glasses960.jpg");
+  background-image: url("img/Funny-Goat-With-Glasses.jpg");
+  background-size: 100% 100%;
+  min-width: 600px;
   height: 424px;
-
+  margin-top: 20px;
 }
 
 .goatButton {
@@ -184,9 +183,7 @@ iframe {
   position: absolute;
   font-size: 20px;
   width: 205px;
-;
 }
-
 
 #goat-guardian {
  margin-top: 200px;
@@ -206,7 +203,6 @@ iframe {
 
 .third input {
   width: 100%;
-
 }
 
 .half {
@@ -231,8 +227,6 @@ iframe {
   height: 100px;
 }
 
-
-
 .submit-box {
   padding: 15px;
   float: left;
@@ -250,4 +244,30 @@ iframe {
 
 .fourth input {
   width: 100%;
+}
+
+.clear-float {
+  clear: both;
+}
+
+#form-footer {
+  max-height: 126px;
+  background-color: #333;
+  color: white;
+}
+.spacer {
+  height: 20px;
+  margin-bottom: 56px;
+}
+
+.form-info {
+  text-align: center;
+}
+
+.infoDiv {
+  overflow: auto;
+}
+
+img {
+  
 }
