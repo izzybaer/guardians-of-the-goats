@@ -66,7 +66,6 @@ button {
   font-size: 20px;
 }
 
-
 #resources-header {
   font-size: 80px;
   text-align: center;
@@ -79,6 +78,7 @@ button {
 }
 
 .resources-header {
+  letter-spacing: 1px;
   text-shadow: 2px 0 black;
   font-size: 80px;
   text-align: center;
@@ -269,5 +269,5 @@ iframe {
 }
 
 img {
-  
+
 }
