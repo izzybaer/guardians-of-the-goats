@@ -37,7 +37,7 @@
     <!-- <div class='clear-float'></div> -->
     <div class='spacer'></div>
     <div id='resources-header'> Join Our Community </div>
-    <h3 class='form-info'> Fill out a form to list a goat that needs help, or become a guardian</h3>
+    <h3 class='form-info'> Fill out a form to list a goat that needs help, or become a guardian. </h3>
     <h3 class='form-info'> A Goat in need, deserves a Guardian indeed! </h3>
     <div class='main'>
 
@@ -51,22 +51,22 @@
           <div id='goat-div'>
             <form id='goat-form' style='display: none'>
               <p class="third"> <label>Goat Name: </label>
-              <input name='nameOfGoat' type='text'</p>
+              <input name='nameOfGoat' type='text' maxlength='10'</p>
 
               <p class="third"> <label>Age: </label>
               <input name='ageOfGoat' type='number'/> </p>
 
               <p class="third"> <label>Location: </label>
-              <input name='locationOfGoat' type='text' required /> </p>
+              <input name='locationOfGoat' type='text' maxlength='15' required /> </p>
 
               <p class="half"> <label>E-Mail: </label>
-              <input name='contactOfGoat' type='text' required /> </p>
+              <input name='contactOfGoat' type='text' maxlength='15' required /> </p>
 
               <p class="half"> <label>Image Url: </label>
-              <input name='goatImage' type='url'/> </p>
+              <input name='goatImage' type='url' maxlength='15' /> </p>
 
               <p class="full"> <label>Needs: </label>
-              <textarea name='serviceNeeded' type='text' required></textarea> </p>
+              <textarea name='serviceNeeded' type='text' maxlength='15' required></textarea> </p>
 
               <p> <button class="submit-box" type='submit'> Submit </button> </p>
             </form>
