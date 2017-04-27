@@ -31,6 +31,7 @@
  text-shadow: 2px 0 black;
  letter-spacing: 1px;
 }
+
 /* Goat Images with hover effect */
 img:hover {
   opacity: .4;
@@ -73,23 +74,22 @@ img:hover {
 }
 
 .goat-wrap:hover {
-  color: white;
-}
-
-.goat-wrap .name:hover {
   color: #333;
-
 }
+
+/*.goat-wrap .name:hover {
+  color: #333;
+}*/
 
 /* Goat's Profile that set on the left bottom corner of each image */
 .infoDiv {
   margin-top: 198px;
   width: auto;
-
-
 }
+
+
 .name {
-  /*margin-top: 40px;*/
+  margin-top: 40px;
   position: absolute;
   font-weight: bold;
   font-size: 40px;
