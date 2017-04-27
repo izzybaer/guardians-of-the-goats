@@ -30,6 +30,18 @@ a {
   z-index: 100;
 }
 
+.nav-bar-info ul {
+  margin-top: 24px;
+  text-align: right;
+}
+
+.nav-bar-info li {
+  margin-left: 23px;
+  list-style-type: none;
+  display: inline-block;
+  width: auto;
+}
+
 .nav-navbar {
   display: inline-block;
   width: 500px;
@@ -58,18 +70,6 @@ a {
   font-family: 'Lora', serif;
   letter-spacing: 1px;
   color: white;
-}
-
-ul {
-  margin-top: 24px;
-  text-align: right;
-}
-
-li {
-  margin-left: 23px;
-  list-style-type: none;
-  display: inline-block;
-  width: auto;
 }
 
 a:hover {
