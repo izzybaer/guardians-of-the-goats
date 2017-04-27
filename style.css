@@ -5,10 +5,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, .resource-body {
   height: auto;
   width: 100%;
-  background-color: white;
+  background-color: #B6D6D4;
 }
 
 #main {
@@ -17,7 +17,7 @@ html, body {
 
 .main {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   height: auto;
 }
 
@@ -76,8 +76,12 @@ button {
 #resources-header {
   font-size: 80px;
   text-align: center;
-  padding-top: 36px;
+  padding-top: 62px;
   padding-bottom: 19px;
+  color: #3D3C3A;
+  text-shadow: 2px 0 black;
+  letter-spacing: 1px;
+  font-weight:bold;
 }
 
 #resources-header, .instructions-header {
@@ -100,7 +104,7 @@ button {
   text-shadow: 2px 0 black;
   font-size: 80px;
   text-align: center;
-  padding-top: 99px;
+  padding-top: 138px;
   padding-bottom: 19px;
 }
 
@@ -166,8 +170,8 @@ a {
 iframe {
   width: 400px;
   height: 300px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-left: 90px;
+  margin-bottom: 50px;
 }
 
 .instructions-ul {
@@ -193,7 +197,7 @@ iframe {
   background-size: 100% 100%;
   min-width: 600px;
   height: 424px;
-  margin-top: 20px;
+  margin-top: 55px;;
 }
 
 .goatButton {
@@ -281,6 +285,7 @@ iframe {
 
 .form-info {
   text-align: center;
+  color: #3D3C3A;
 }
 
 .infoDiv {
