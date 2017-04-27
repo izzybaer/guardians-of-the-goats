@@ -106,6 +106,7 @@ button {
   text-align: center;
   padding-top: 138px;
   padding-bottom: 19px;
+  font-weight: bold;
 }
 
 .resource-description {
@@ -193,8 +194,10 @@ iframe {
 }
 
 .goat-banner-form {
-  background-image: url("img/Funny-Goat-With-Glasses.jpg");
+  background-image: url("img/goat-with-glasses1.jpg");
   background-size: 100% 100%;
+  background-position: center center;
+  background-size: cover;
   min-width: 600px;
   height: 424px;
   margin-top: 55px;;
