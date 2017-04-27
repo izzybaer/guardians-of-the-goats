@@ -78,6 +78,17 @@ button {
   font-family: 'Lobster Two', cursive;
 }
 
+.guardians-header {
+ font-size: 80px;
+ text-align: center;
+ padding-top: 75px;
+ padding-bottom: 75px;
+ font-family: 'Lobster Two', cursive;
+ color: #3D3C3A;
+ text-shadow: 2px 0 black;
+ letter-spacing: 1px;
+}
+
 .resources-header {
   letter-spacing: 1px;
   text-shadow: 2px 0 black;
@@ -219,7 +230,7 @@ iframe {
 
 .full {
   display: inline-block;
-  width: 91%;
+  width: 88%;
   padding: 5px;
   float: left;
 }
