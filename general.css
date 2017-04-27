@@ -11,22 +11,20 @@ a {
   color: white;
 }
 
-
-
-
 .nav-bar {
   position: fixed;
   display: inline-block;
   width: 100%;
   min-height: 63px;
   background-color: #333333;
+  z-index: 100;
 }
 
 .nav-bar-info {
   min-width: 800px;
   min-height: 63px;
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 60%;
   z-index: 100;
 }
 
