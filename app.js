@@ -66,7 +66,7 @@ function postDefaultGuardians(){
 
   try {
     // localStorage.guardians = JSON.stringify(guardians);
-    guardians = JSON.parse(localStorage.gaurdians);
+    guardians = JSON.parse(localStorage.guardians);
   } catch (error){
     console.log('something went wrong!', error);
   }
@@ -92,6 +92,7 @@ function handleGoatFormSubmit(event) {
 
   try {
     localStorage.goats = JSON.stringify(goats);
+    // console.log('adding goats', goats);
   } catch (error){
     console.log('something went wrong!', error);
   }
@@ -118,6 +119,7 @@ function handleGuardianFormSubmit(event) {
 
   try {
     localStorage.guardians = JSON.stringify(guardians);
+    console.log('adding guardian', guardians);
   } catch (error){
     console.log('something went wrong!', error);
   }
