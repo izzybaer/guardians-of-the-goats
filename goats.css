@@ -24,6 +24,7 @@
  color: #3D3C3A;
  text-shadow: 2px 0 black;
  letter-spacing: 1px;
+ font-weight:bold;
 }
 /* Goat Images with hover effect */
 img:hover {
