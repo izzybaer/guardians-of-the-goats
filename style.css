@@ -3,24 +3,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: 1px solid black;*/
 }
 
 html, body {
-
-    height: auto;
-    width: 100%;
-
+  height: auto;
+  width: 100%;
 }
 
 
 .main {
   margin: 0 auto;
-
-  width: 960px;
-  height: 100% ;
-  /*border: 2px solid blue;*/
-  /*background-color: blue;*/
+  width: 60%;
+  height: auto;
 }
 
 #selectform {
@@ -96,7 +90,6 @@ button {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 960px;
 }
 
 .rescue-links {
@@ -104,6 +97,8 @@ button {
   width:315px;
   margin: 0 auto;
   display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #3D3C3A;
   border-radius: 17px;
   text-align:justify;
 }
@@ -154,8 +149,7 @@ iframe {
 }
 
 .instructions-ul {
-  list-style-image: url("img/bulletpoints-goatface.jpg");
-  font-family: 'Lobster Two', cursive;
+  list-style-image: url("img/shadow-goat.png");
   font-size: 25px;
 }
 
@@ -163,6 +157,8 @@ iframe {
   margin-top: 20px;
   margin-bottom: 20px;
   color: black;
+  display:block;
+  text-align: left;
 }
 
 
