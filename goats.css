@@ -7,25 +7,36 @@
 }
 
 body {
-  /*background:url(img/baby-goat-wallpaper.jpg) no-repeat center center fixed;*/
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-  background-color: #FFF3FD;
+  background-color: #B6D6D4;
 }
 
 .main {
-  margin: 0 auto;
-  width: 960px;
-  height: 100% ;
-  /*border: 2px solid blue;*/
+  padding-top: 80px;
+  padding-bottom: 100px;
+
 }
+
+
+/* Header */
+
+.goat-images-header {
+ font-size: 80px;
+ text-align: center;
+ padding-top: 75px;
+ padding-bottom: 75px;
+ font-family: 'Lobster Two', cursive;
+ color: #3D3C3A;
+ text-shadow: 2px 0 black;
+}
+
+
+/* Goat Images with hover effect */
 
 img:hover {
   opacity: .4;
   color: white;
-
+  border: 1px solid #333;
+  border-radius: 15px;
 }
 
 .goat-wrap {
@@ -36,6 +47,8 @@ img:hover {
   margin-left: 19px;
   margin-top: 30px;
   color: white;
+  border: 2px solid #333;
+  border-radius: 15px;
 }
 
 .goat-wrap img {
@@ -43,16 +56,22 @@ img:hover {
   display: inline;
   height: 100%;
   width: 100%;
-  /*border-radius: 50%;*/
-  border: 2px solid black;
+  border: 1px solid #333;
   z-index: 1;
-  /*opacity: .78;*/
   border-radius: 15px;
 }
 
 .goat-wrap:hover {
-  color: black;
+  color: #333;
+
 }
+
+
+
+
+
+/* Goat's Profile that set on the left bottom corner of each image */
+
 
 .infoDiv {
   margin-top: 198px;
@@ -67,11 +86,20 @@ img:hover {
   margin-top: 10px;
   margin-bottom: 145px;
   z-index: 50;
+  font-family: 'Lora';
 }
 
-.age, .location, .service-needed, .contact {
+.age, .location, .service-needed {
   font-size: 20px;
   margin-left: 10px;
   font-weight: bold;
-  /*white-space: nowrap;*/
+  font-family: 'Lora';
+}
+
+.contact {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: 'Lora';
+  margin-bottom: 20px;
 }
