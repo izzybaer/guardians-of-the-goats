@@ -3,22 +3,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: 1px solid black;*/
 }
 
 html, body {
-
-    height: auto;
-    width: 100%;
-
+  height: auto;
+  width: 100%;
+  background-color: #B6D6D4;
 }
 
 
 .main {
   margin: 0 auto;
-
   width: 60%;
-  height: 100% ;
+  height: auto;
 }
 
 #selectform {
@@ -71,9 +68,7 @@ button:active {
 button {
   width:auto;
   padding: 20px;
-  /*box-shadow: inset 0 0 10px #000000;*/
-  /*border: 1px inset #b37d00 ;*/
-    border: 1px #333 ;
+  border: 1px #333 ;
   text-decoration: none ;
   display: inline-block ;
   background-color: #333;
@@ -84,17 +79,23 @@ button {
 
 
 .resources-header {
+  text-shadow: 2px 0 black;
   font-size: 80px;
   text-align: center;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 99px;
+  padding-bottom: 19px;
+}
+
+.resource-description {
+  text-align: center;
+  color: #3D3C3A;
 }
 
 .rescues {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 960px;
+  margin-top: 55px;
 }
 
 .rescue-links {
@@ -102,6 +103,8 @@ button {
   width:315px;
   margin: 0 auto;
   display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #3D3C3A;
   border-radius: 17px;
   text-align:justify;
 }
@@ -152,8 +155,7 @@ iframe {
 }
 
 .instructions-ul {
-  list-style-image: url("img/bulletpoints-goatface.jpg");
-  font-family: 'Lobster Two', cursive;
+  list-style-image: url("img/shadow-goat.png");
   font-size: 25px;
 }
 
@@ -161,8 +163,9 @@ iframe {
   margin-top: 20px;
   margin-bottom: 20px;
   color: black;
+  display:block;
+  text-align: left;
 }
-
 
 .resources-header, .instructions-header {
   font-family: 'Lobster Two', cursive;
