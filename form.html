@@ -66,7 +66,7 @@
               <input name='goatImage' type='url' placeholder="Please type in image's URL"/> </p>
 
               <p class="full"> <label>Needs </label>
-              <textarea name='serviceNeeded' type='text' required placeholder='Please specify what this goat needs.'></textarea> </p>
+              <textarea name='serviceNeeded' type='text' placeholder='Please specify what this goat needs' required ></textarea> </p>
 
               <p> <button class="submit-box" type='submit'> Submit </button> </p>
             </form>
@@ -74,7 +74,7 @@
 
             <div id='guardian-div'>
               <form id='goat-guardian-form' style='display: none'>
-                <p class="fourth"> <label> Guardian's Name </label> <input name='nameOfGuardian' type='First Name and Last Name'/> </p>
+                <p class="fourth"> <label> Guardian's Name </label> <input name='nameOfGuardian' type='text' placeholder='First Name and Last Name'/> </p>
 
                 <p class="fourth"> <label> Location </label> <input name='locationOfGuardian' type='text' placeholder='City and State' /> </p>
 
@@ -82,7 +82,8 @@
 
                 <p class="fourth"> <label> Upload Picture </label> <input name='guardianImage' type='text' placeholder="Please type in image's URL"/> </p>
 
-                <p class="full"> <label> How can you help a goat? </label> <textarea name='serviceOffered' type='text' placeholder='Please specify what assistance you can give to our goats'> </textarea> </p>
+                <p class="full"> <label> How can you help a goat? </label>
+                  <textarea name='serviceOffered' type='text' placeholder="Please specify what assistance you can give to our goats" required > </textarea> </p>
 
                 <p> <button class="submit-box" type='submit'> Submit </button> </p>
               </form>
