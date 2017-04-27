@@ -107,7 +107,8 @@ main p {
   min-width: 800px;
   min-height: 63px;
   margin: 0 auto;
-  max-width: 1140px;
+  /*max-width: 1140px;*/
+  max-width: 60%;
   z-index: 100;
 }
 

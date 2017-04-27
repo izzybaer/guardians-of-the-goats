@@ -7,6 +7,12 @@
   font-family: 'Lora', serif;
 }
 
+.main {
+  margin: 0 auto;
+  width: 80%;
+  height: 100% ;
+}
+
 a {
   color: white;
 }
@@ -17,6 +23,7 @@ a {
   width: 100%;
   min-height: 63px;
   background-color: #333333;
+  z-index: 100;
 }
 
 .nav-bar-info {
@@ -25,6 +32,18 @@ a {
   margin: 0 auto;
   max-width: 60%;
   z-index: 100;
+}
+
+.nav-bar-info ul {
+  margin-top: 24px;
+  text-align: right;
+}
+
+.nav-bar-info li {
+  margin-left: 23px;
+  list-style-type: none;
+  display: inline-block;
+  width: auto;
 }
 
 .nav-navbar {
@@ -55,18 +74,6 @@ a {
   font-family: 'Lora', serif;
   letter-spacing: 1px;
   color: white;
-}
-
-ul {
-  margin-top: 24px;
-  text-align: right;
-}
-
-li {
-  margin-left: 23px;
-  list-style-type: none;
-  display: inline-block;
-  width: auto;
 }
 
 a:hover {
