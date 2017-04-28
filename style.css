@@ -239,16 +239,17 @@ iframe {
 }
 
 #goat-guardian {
- margin-top: 288px;
+ margin-top: 230px;
  border-top: 1px solid black;
  border-right: 1px solid black;
  border-bottom: 1px solid black;
 }
 
 #goat-in-need {
-  margin-top: 358px;
+  margin-top: 328px;
   border-top: 1px solid black;
   border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .third {
