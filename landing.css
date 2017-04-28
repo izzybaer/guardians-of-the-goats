@@ -83,7 +83,7 @@ main p {
 .about-us {
   color: #333;
   font-size: 60px;
-  text-align: center;
+  text-align: center justify;
   margin-top: 100px;
 }
 
@@ -180,4 +180,8 @@ a:hover {
   text-align: center;
   font-size: .8em;
   padding-bottom: 7px;
+}
+
+.content {
+  text-align: justify;
 }
