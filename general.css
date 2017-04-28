@@ -12,6 +12,15 @@
   height: 100% ;
 }
 
+
+.resources-main {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
+
+
+
 a {
   color: white;
 }

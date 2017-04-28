@@ -15,6 +15,7 @@ html, .resource-body {
   margin-bottom: 200px;
 }
 
+
 .main {
   margin: 0 auto;
   width: 80%;
@@ -125,8 +126,23 @@ button {
 .rescue-links {
   height:320px;
   width:315px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 0
+  margin-right: 0
+  margin-top: 0 auto;
+  margin-bottom: 0 auto;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 3px solid #333;
+  border-radius: 17px;
+  text-align:justify;
+
+}
+
+.rescue-links-middle {
+  height:320px;
+  width:315px;
+  margin-left: 53px;
+  margin-right: 53px;
   margin-top: 0 auto;
   margin-bottom: 0 auto;
   display: inline-block;
