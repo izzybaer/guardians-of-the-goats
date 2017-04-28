@@ -125,12 +125,16 @@ button {
 .rescue-links {
   height:320px;
   width:315px;
-  margin: 0 auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 0 auto;
+  margin-bottom: 0 auto;
   display: inline-block;
   box-sizing: border-box;
-  border: 1px solid #3D3C3A;
+  border: 3px solid #333;
   border-radius: 17px;
   text-align:justify;
+
 }
 
 image {
@@ -166,6 +170,7 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-top: 30px;
+   text-shadow: 2px 0 black;
 }
 
 iframe {
