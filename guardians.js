@@ -62,7 +62,7 @@ function guardianField() {
 
     guardianDisplay = document.createElement('img');
     if (guardians[i].guardianImage == ''){
-      guardianDisplay.src = 'Clipboard07.jpg';
+      guardianDisplay.src = 'img/goat-shadow.png';
       guardiansList.appendChild(guardianWrap);
       guardianWrap.appendChild(guardianDisplay);
     } else {
