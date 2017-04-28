@@ -12,6 +12,11 @@
   height: 100% ;
 }
 
+.form-main {
+  margin: 0 auto;
+  height: 100%;
+  background-color: #333;
+}
 
 .resources-main {
   margin: 0 auto;
