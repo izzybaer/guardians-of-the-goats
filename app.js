@@ -49,7 +49,7 @@ function Guardian(guardianName, guardianLocation, guardianContact, serviceOffere
   this.guardianImage = src;
 }
 
-// postDefaultGuardians() instantiates new Guardians and pushes them to goats array and saves to local storage
+//postDefaultGuardians() instantiates new Guardians and pushes them to goats array and saves to local storage
 function postDefaultGuardians(){
   var defaultGuardians = [
     new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I have never eaten a goat.', 'adorableGoat.jpg'),
