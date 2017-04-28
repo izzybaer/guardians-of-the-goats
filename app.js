@@ -3,15 +3,15 @@
 var guardians = [];
 
 var goats = [
-  new Goat('Duncan', 16, 'Seattle', 'foster', 'duncan@summail.com', 'img/goat-in-glasses.jpg'),
-  new Goat('Ben', 2, 'Redmond', 'transportation', 'J3234@summail.com', 'img/Goat_1.jpg'),
-  new Goat('Heraldo', 5, 'Sammamish', 'rescue', 'Guiar_Boy@summail.com', 'img/Goat_2.jpg'),
-  new Goat('Shyanne', 12, 'Spokane', 'foster', 'Jakes@summail.com', 'img/Goat_3.jpg'),
-  new Goat('Biatreaux', 3, 'Black Diamond', 'adpotion', 'Yoyoyo@summail.com', 'img/Goat_4.jpg'),
-  new Goat('Horatio', 12, 'Snohomish', 'donation', 'crackler@summail.com', 'img/Goat_5.jpg'),
-  new Goat('Anette', 8, 'Walla Walla', 'housing', 'goatlover@summail.com', 'img/Goat_6.jpg'),
-  new Goat('Madeline', 7, 'Bellingham', 'foster', 'Meghan@summail.com', 'img/Goat_7.jpg'),
-  new Goat('Charles', 1, 'Covington', 'adoption', 'LEROYJENKINS@summail.com', 'img/Goat_8.jpg'),
+  new Goat('Dustin', 9, 'Seattle', 'foster', 'dustin@goatmail.com', 'img/goat-in-glasses.jpg'),
+  new Goat('Ben', 2, 'Redmond', 'transportation', 'J3234@goatmail.com', 'img/Goat_1.jpg'),
+  new Goat('Heraldo', 5, 'Sammamish', 'adoption', 'Guiar_Boy@goatmail.com', 'img/Goat_2.jpg'),
+  new Goat('Shyanne', 12, 'Spokane', 'foster', 'Jakes@goatmail.com', 'img/Goat_3.jpg'),
+  new Goat('Biatreaux', 3, 'Black Diamond', 'adpotion', 'Yoyoyo@goatmail.com', 'img/Goat_4.jpg'),
+  new Goat('Horatio', 12, 'Snohomish', 'donation', 'crackler@goatmail.com', 'img/Goat_5.jpg'),
+  new Goat('Anette', 8, 'Walla Walla', 'adoption', 'goatlover@goatmail.com', 'img/Goat_6.jpg'),
+  new Goat('Madeline', 7, 'Bellingham', 'foster', 'Meghan@goatmail.com', 'img/Goat_7.jpg'),
+  new Goat('Charles', 6, 'Covington', 'adoption', 'xavier@goatmail.com', 'img/Goat_8.jpg'),
 ];
 
 try {
@@ -52,12 +52,12 @@ function Guardian(guardianName, guardianLocation, guardianContact, serviceOffere
 //postDefaultGuardians() instantiates new Guardians and pushes them to goats array and saves to local storage
 function postDefaultGuardians(){
   var defaultGuardians = [
-    new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I have never eaten a goat.', 'Clipboard06.jpg'),
-    new Guardian('Evette', 'Seattle, WA', 'evette@hascoolshoes.com', 'I will buy it a porsche.', 'Clipboard02.jpg'),
-    new Guardian('Dustin', 'Seattle, WA', 'dustin@mycountertops.com', 'I will ride a goat to the gym.', 'Clipboard03.jpg'),
-    new Guardian('Matthew', 'Seattle, WA', 'lions@areawesome.com', 'I will do parkour with them.', 'Clipboard04.jpg'),
-    new Guardian('Ben', 'Lynnwood, WA', 'DnD5e@rules.com', 'I will raise your goat as a Bard.', 'Clipboard05.jpg'),
-    new Guardian('Duncan', 'Seattle, WA', 'Duncan@donuts.lamejoke.com', 'I teach goats how to hack.', 'Clipboard01.jpg'),
+    new Guardian('Izzy', 'Seattle, WA', 'izzy@lovesdemgoats.com', 'I can adopt a goat.', 'Clipboard06.jpg'),
+    new Guardian('Evette', 'Seattle, WA', 'evette@hascoolshoes.com', 'I can sponsor a goat.', 'Clipboard02.jpg'),
+    new Guardian('Dustin', 'Seattle, WA', 'dustin@mycountertops.com', 'I can donate sweaters.', 'Clipboard03.jpg'),
+    new Guardian('Matthew', 'Seattle, WA', 'lions@areawesome.com', 'I can adopt a goat.', 'Clipboard04.jpg'),
+    new Guardian('Ben', 'Lynnwood, WA', 'DnD5e@rules.com', 'I can transport to appointments.', 'Clipboard05.jpg'),
+    new Guardian('Duncan', 'Seattle, WA', 'Duncan@donuts.lamejoke.com', 'I can sponsor a goat.', 'Clipboard01.jpg'),
   ];
 
   for (var i = 0; i < defaultGuardians.length; i++){
