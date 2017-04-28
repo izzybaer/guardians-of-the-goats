@@ -1,14 +1,14 @@
 'user strict';
 
 var goats = [new Goat('Duncan', 16, 'Seattle', 'foster', 'duncan@summail.com', 'img/goat-in-glasses.jpg'),
-  new Goat('Ben', 2, 'Redmond', 'transportation', 'J3234@summail.com', 'img/Goat_1.jpg'),
-  new Goat('Heraldo', 5, 'Sammamish', 'rescue', 'Guiar_Boy@summail.com', 'img/Goat_2.jpg'),
-  new Goat('Shyanne', 12, 'Spokane', 'foster', 'Jakes@summail.com', 'img/Goat_3.jpg'),
-  new Goat('Biatreaux', 3, 'Black Diamond', 'adpotion', 'Yoyoyo@summail.com', 'img/Goat_4.jpg'),
-  new Goat('Horatio', 12, 'Snohomish', 'donation', 'crackler@summail.com', 'img/Goat_5.jpg'),
-  new Goat('Anette', 8, 'Walla Walla', 'housing', 'goatlover@summail.com', 'img/Goat_6.jpg'),
-  new Goat('Madeline', 7, 'Bellingham', 'foster', 'Meghan@summail.com', 'img/Goat_7.jpg'),
-  new Goat('Charles', 1, 'Covington', 'adoption', 'LEROYJENKINS@summail.com', 'img/Goat_8.jpg'),];
+new Goat('Ben', 2, 'Redmond', 'transportation', 'J3234@summail.com', 'img/Goat_1.jpg'),
+new Goat('Heraldo', 5, 'Sammamish', 'rescue', 'Guiar_Boy@summail.com', 'img/Goat_2.jpg'),
+new Goat('Shyanne', 12, 'Spokane', 'foster', 'Jakes@summail.com', 'img/Goat_3.jpg'),
+new Goat('Biatreaux', 3, 'Black Diamond', 'adpotion', 'Yoyoyo@summail.com', 'img/Goat_4.jpg'),
+new Goat('Horatio', 12, 'Snohomish', 'donation', 'crackler@summail.com', 'img/Goat_5.jpg'),
+new Goat('Anette', 8, 'Walla Walla', 'housing', 'goatlover@summail.com', 'img/Goat_6.jpg'),
+new Goat('Madeline', 7, 'Bellingham', 'foster', 'Meghan@summail.com', 'img/Goat_7.jpg'),
+new Goat('Charles', 1, 'Covington', 'adoption', 'LEROYJENKINS@summail.com', 'img/Goat_8.jpg'),];
 
 try {
   goats = JSON.parse(localStorage.goats);
@@ -38,10 +38,18 @@ function displayGoatInformation() {
   for(var i=0; i <goats.length; i++) {
     div = document.createElement('div');
     div.setAttribute('class', 'goat-wrap');
+
     goatDisplay = document.createElement('img');
-    goatDisplay.src = goats[i].goatImage;
-    mouseOverImages.appendChild(div);
-    div.appendChild(goatDisplay);
+    if (goats[i].goatImage == '') {
+      goatDisplay.src = 'adorableGoat.jpg';
+      mouseOverImages.appendChild(div);
+      div.appendChild(goatDisplay);
+
+    } else {
+      goatDisplay.src = goats[i].goatImage;
+      mouseOverImages.appendChild(div);
+      div.appendChild(goatDisplay);
+    }
 
     info = document.createElement('p');
     info.setAttribute('class', 'name');
